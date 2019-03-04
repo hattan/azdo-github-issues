@@ -1,0 +1,49 @@
+{
+    "manifestVersion": 1,
+    "id": "azdo-github-issues",
+    "name": "GitHub Issues Notifier",
+    "version": "0.5.20",
+    "publisher": "HattanShobokshi",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],    
+    "description": "GitHub Issues Notifier.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "images/logo.png"        
+    },
+    "files": [
+        {
+            "path": "buildAndReleaseTask"
+        }
+    ],
+    "screenshots": [
+        {
+          "path": "images/screen1.png"
+        }
+      ],    
+    "content": {
+        "license": {
+          "path": "license.md"
+        },
+        "details": {
+          "path": "overview.md"
+        }
+      },    
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "buildAndReleaseTask"
+            }
+        }
+    ]
+}

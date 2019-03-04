@@ -1,0 +1,6 @@
+buildAndReleaseTask/**/*.js
+tests/**/*.js
+node_modules
+.vscode
+*.vsix
+.taskkey

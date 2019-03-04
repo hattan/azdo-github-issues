@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "commonjs",
+    "types" : ["node","mocha"]
+  },
+  "include": [
+    "buildAndReleaseTask/**/*",
+    "tests/**/*"
+  ],
+  "exclude": [    
+    "node_modules/**/*"
+  ]
+}
