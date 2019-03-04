@@ -101,6 +101,8 @@ ${buildUrl}`
       if(jobStatus == `Failed`){
         console.log(`GitHub Issues Notifier: No existing issue for branch ${branch}.`);
         await this.createIssue(buildId,pipeline,sha,jobStatus,buildUrl,branch);
+      } else if(jobStatus == `Succeeded` || jobStatus == `SucceededWithIssues`){
+        console.log(`GitHub Issues Notifier: No existing issue for branch ${branch} and job has Succeeded. No actions taken.`);
       }
     }
   }
