@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "azdo-github-issues",
     "name": "GitHub Issues Notifier",
-    "version": "0.5.20",
+    "version": "0.5.23",
     "publisher": "HattanShobokshi",
     "targets": [
         {

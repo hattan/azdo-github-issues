@@ -16,7 +16,7 @@ async function run() {
         const teamProject = tl.getVariable('System.TeamProject');
         const url = getBuildUrl(teamFoundationCollectionUri,teamProject,buildId);
         const hostType = tl.getVariable('System.HostType');
-        const sourceBranchName = tl.getVariable('Build.SourceBranchName');
+        const sourceBranch = tl.getVariable('Build.SourceBranch');
         if(hostType === 'deployment'){
             throw "This task is only for build piplines."
         }
@@ -33,7 +33,7 @@ async function run() {
         const githubRepository = tl.getInput('githubRepository');
         
         let service : GitHubApiService = new GitHubApiService(githubEndpointToken,githubRepository);
-        await service.processBuild(buildId,definitionName,sourceVersion,jobStatus,url,sourceBranchName);
+        await service.processBuild(buildId,definitionName,sourceVersion,jobStatus,url,sourceBranch);
 
     }
     catch (err) {

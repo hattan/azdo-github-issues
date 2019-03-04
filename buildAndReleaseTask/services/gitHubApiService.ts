@@ -67,7 +67,7 @@ export class GitHubApiService{
     let newIssue : Issue ={
       title: `Azure Build Failed - Pipeline:${pipeline} BuildId:${buildId}`,
       body: `\`\`\`
-Build Failure for Pipline ${pipeline}
+Build Failure for pipeline ${pipeline}
 Build Status: ${jobStatus}
 Commit: ${sha}
 Branch: ${branch}
