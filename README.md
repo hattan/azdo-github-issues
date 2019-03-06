@@ -4,9 +4,11 @@
 
 This extension contains a task to be used in an Azure DevOps Build Pipeline. This task checks the build status and if a build fails creates a GitHub issue in the designated repo. When the build is fixed, the task automatically closes the issue.
 
-Note: This task only impacts failed or previously failing builds.
+**This task only creates one issue per branch. If the same branch is failing consistently, it will not generate another issue.**
 
-Look at [overview.md](overview/md) for more information
+**This task only impacts failed or previously failing builds.** 
+
+Look at [overview.md](overview.md) for more information
 
 Check out this extension at the Visual Studio Marketplace [here](https://marketplace.visualstudio.com/items?itemName=hattanshobokshi.azdo-github-issues).
 
