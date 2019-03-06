@@ -6,7 +6,7 @@ This extension contains a task to be used in an Azure DevOps Build Pipeline. Thi
 
 Note: This task only impacts failed or previously failing builds.
 
-Look at [overview.md](overview/md) for more information
+Look at [overview.md](overview.md) for more information
 
 Check out this extension at the Visual Studio Marketplace [here](https://marketplace.visualstudio.com/items?itemName=hattanshobokshi.azdo-github-issues).
 
